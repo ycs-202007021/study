@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /*화면 전체적인 배경*/
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.quiz-container {
+  /*퀴즈박스*/
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+  overflow: hidden;
+  width: 600px;
+  max-width: 100%;
+}
+
+.quiz-header {
+  /*맨윗부분*/
+  padding: 4rem;
+}
+
+h2 {
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+ul li label {
+  cursor: pointer;
+}
+
+button {
+  /*다음으로 넘어가는 결정 버튼*/
+  background-color: rgb(112, 121, 253);
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-family: inherit;
+  font-size: 1.1rem;
+  width: 100%;
+  padding: 1.3rem;
+}
+
+button:hover {
+  /*버튼 위에 마우스를 올렸을때의 색상*/
+  background-color: #1c1d50;
+}
+
+button:focus {
+  /*정답을 고르기전 결정칸의 색*/
+  background-color: #464eb6;
+  outline: none;
+}
