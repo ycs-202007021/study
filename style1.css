@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /*배경*/
+  background-color: #f5f5f5;
+  color: #444;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+h1 {
+  /*할 일 큰 글씨로*/
+  color: rgb(112, 121, 253);
+  font-size: 10rem;
+  text-align: center;
+  opacity: 0.4;
+}
+
+form {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  width: 400px;
+}
+
+.input {
+  /*텍스트 넣는 곳*/
+  border: none;
+  color: #444;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  display: block;
+  width: 100%;
+}
+
+.input::placeholder {
+  /*당신의 할일을 입력해주세요 라는 글씨 색 조정*/
+  color: #d5d5d5;
+  font-size: 1.5rem;
+}
+
+.todos {
+  /*값 넣는 곳*/
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.todos li {
+  /* 할 일을 넣은 뒤  밑에 보이는 할일들 조정*/
+  border-top: 1px solid #e5e5e5;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.todos li.completed {
+  /* 할 일완료 뒤 보이는 것*/
+  color: #b6b6b6;
+  text-decoration: line-through;
+}
+
+small {
+  /*왼쪽클릭어쩌구*/
+  color: #b5b5b5;
+  margin-top: 3rem;
+  text-align: center;
+}
